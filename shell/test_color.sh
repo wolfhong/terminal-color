@@ -31,3 +31,7 @@ printf "%-10s %s %s\n" italic `italic $english; italic $chinese`
 printf "%-10s %s %s\n" underline `underline $english; underline $chinese`
 printf "%-10s %s %s\n" blink `blink $english; blink $chinese`
 printf "%-10s %s %s\n" strike `strike $english; strike $chinese`
+
+echo
+
+red `yellow_bg 'use functions composed together'`

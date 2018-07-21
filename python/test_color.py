@@ -59,4 +59,4 @@ for name, style in zip(name_list, style_list):
     ))
 
 print("")
-print(red(br_yellow_bg("use functions composed together")))
+print(red(yellow_bg("use functions composed together")))

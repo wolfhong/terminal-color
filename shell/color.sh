@@ -24,99 +24,99 @@ v_bg_white="\033[47m"
 
 # color as foreground
 function black(){
-    echo -e "${v_fg_black}$1${v_fg_end}"
+    echo -e "${v_fg_black}$@${v_fg_end}"
 }
 function red(){
-    echo -e "${v_fg_red}$1${v_fg_end}"
+    echo -e "${v_fg_red}$@${v_fg_end}"
 }
 function green(){
-    echo -e "${v_fg_green}$1${v_fg_end}"
+    echo -e "${v_fg_green}$@${v_fg_end}"
 }
 function yellow(){
-    echo -e "${v_fg_yellow}$1${v_fg_end}"
+    echo -e "${v_fg_yellow}$@${v_fg_end}"
 }
 function blue(){
-    echo -e "${v_fg_blue}$1${v_fg_end}"
+    echo -e "${v_fg_blue}$@${v_fg_end}"
 }
 function magenta(){
-    echo -e "${v_fg_magenta}$1${v_fg_end}"
+    echo -e "${v_fg_magenta}$@${v_fg_end}"
 }
 function cyan(){
-    echo -e "${v_fg_cyan}$1${v_fg_end}"
+    echo -e "${v_fg_cyan}$@${v_fg_end}"
 }
 function white(){
-    echo -e "${v_fg_white}$1${v_fg_end}"
+    echo -e "${v_fg_white}$@${v_fg_end}"
 }
 
 # color as background
 function black_bg(){
-    echo -e "${v_bg_black}$1${v_bg_end}"
+    echo -e "${v_bg_black}$@${v_bg_end}"
 }
 function red_bg(){
-    echo -e "${v_bg_red}$1${v_bg_end}"
+    echo -e "${v_bg_red}$@${v_bg_end}"
 }
 function green_bg(){
-    echo -e "${v_bg_green}$1${v_bg_end}"
+    echo -e "${v_bg_green}$@${v_bg_end}"
 }
 function yellow_bg(){
-    echo -e "${v_bg_yellow}$1${v_bg_end}"
+    echo -e "${v_bg_yellow}$@${v_bg_end}"
 }
 function blue_bg(){
-    echo -e "${v_bg_blue}$1${v_bg_end}"
+    echo -e "${v_bg_blue}$@${v_bg_end}"
 }
 function magenta_bg(){
-    echo -e "${v_bg_magenta}$1${v_bg_end}"
+    echo -e "${v_bg_magenta}$@${v_bg_end}"
 }
 function cyan_bg(){
-    echo -e "${v_bg_cyan}$1${v_bg_end}"
+    echo -e "${v_bg_cyan}$@${v_bg_end}"
 }
 function white_bg(){
-    echo -e "${v_bg_white}$1${v_bg_end}"
+    echo -e "${v_bg_white}$@${v_bg_end}"
 }
 
 # style
 function bold(){
-    echo -e "\033[1m$1\033[22m"  # not \033[21m
+    echo -e "\033[1m$@\033[22m"  # not \033[21m
 }
 function italic(){
-    echo -e "\033[3m$1\033[23m"  # Not widely supported. Sometimes treated as inverse.
+    echo -e "\033[3m$@\033[23m"  # Not widely supported. Sometimes treated as inverse.
 }
 function underline(){
-    echo -e "\033[4m$1\033[24m"
+    echo -e "\033[4m$@\033[24m"
 }
 function blink(){
-    echo -e "\033[5m$1\033[25m"
+    echo -e "\033[5m$@\033[25m"
 }
 function strike(){
-    echo -e "\033[9m$1\033[29m"
+    echo -e "\033[9m$@\033[29m"
 }
 
 # style and color for highlight
 v_hl_end="\033[22;27;39m"
 
 function black_hl(){
-    echo -e "\033[1;30;7m$1${v_hl_end}"
+    echo -e "\033[1;30;7m$@${v_hl_end}"
 }
 function red_hl(){
-    echo -e "\033[1;31;7m$1${v_hl_end}"
+    echo -e "\033[1;31;7m$@${v_hl_end}"
 }
 function green_hl(){
-    echo -e "\033[1;32;7m$1${v_hl_end}"
+    echo -e "\033[1;32;7m$@${v_hl_end}"
 }
 function yellow_hl(){
-    echo -e "\033[1;33;7m$1${v_hl_end}"
+    echo -e "\033[1;33;7m$@${v_hl_end}"
 }
 function blue_hl(){
-    echo -e "\033[1;34;7m$1${v_hl_end}"
+    echo -e "\033[1;34;7m$@${v_hl_end}"
 }
 function magenta_hl(){
-    echo -e "\033[1;35;7m$1${v_hl_end}"
+    echo -e "\033[1;35;7m$@${v_hl_end}"
 }
 function cyan_hl(){
-    echo -e "\033[1;36;7m$1${v_hl_end}"
+    echo -e "\033[1;36;7m$@${v_hl_end}"
 }
 function white_hl(){
-    echo -e "\033[1;37;7m$1${v_hl_end}"
+    echo -e "\033[1;37;7m$@${v_hl_end}"
 }
 
 # unset v_fg_end v_bg_end v_hl_end
